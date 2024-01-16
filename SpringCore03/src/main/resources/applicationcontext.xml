@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+               
+<!--      <context:annotation-config/>
+     <context:component-scan base-package="com.telusko"></context:component-scan>
+      -->
+<bean id="emp1" class="com.rahul.bean.Employee">
+<constructor-arg value="01"/>
+<constructor-arg value="Rahul"/>
+<constructor-arg value="HYD"/>
+<constructor-arg value="7658.98f"/>
+
+</bean>
+<bean id="emp2" class="com.rahul.bean.Employee">
+<constructor-arg  index="2" value="BANGLORE"/>
+<constructor-arg  index="0" value="02"/>
+<constructor-arg  index="3" value="98765"/>
+<constructor-arg  index="1" value="virat"/>
+
+</bean>
+<bean id="emp3" class="com.rahul.bean.Employee">
+<constructor-arg name="empCity"  value="BANGLORE"/>
+<constructor-arg name="empid"		 value="02"/>
+<constructor-arg name="empSalary"  value="98765"/>
+<constructor-arg name="empName"  value="virat"/>
+
+</bean>
+
+<bean id="emp4" class="com.rahul.bean.Employee">
+<constructor-arg name="empCity"  type="java.lang.String" value="BANGLORE"/>
+<constructor-arg name="empid"	type="java.lang.Integer"	 value="02"/>
+<constructor-arg name="empSalary" type="java.lang.Float" value="98765.6f"/>
+<constructor-arg name="empName" type="java.lang.String" value="virat"/>
+
+</bean>
+
+      
+      
+</beans>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   <bean id="firstFlight" class="com.rahul.beans.FirstFlight"/>
+   <bean id="blueDart" class="com.rahul.beans.BlueDart" primary="true"/>
+   <bean id="fedEx" class="com.rahul.beans.FedEx"/>
+   
+   
+<bean id="amazon" class="com.rahul.beans.Amazon" autowire="byType"/>
+
+<!-- //linking of two objects is called wiring (Auto Wiring)
+	autowire has 4 methos
+	 by mentioning byType in autowire it is telling that it can't create the dependency for any one of them it is confusing what to do and error
+	 we have primary as a attribute it will given priority first i will given dependency
+	 if you have mutilple classes  we can use primary to give high priority as 
+	 primary ="true" then it is considered as hight priority
+	 
+	 and we also have byName in autowire
+	 byName -> it causes readability isssues as we need to change it bean id to service as in the amazon service referece 
+	 
+	 constructor will injected first 
+	 
+	 
+	 autowire-candidate="false" -> dependency injection is noteligible but it is maintained by spring container
+	 
+	 auto="no" -> this means we are telling spring to not to create any dependency injection
+	 we are manually creating the depencdency injection by using property tagg <property/>
+	 
+	 
+	 
+	 
+ -->
+ 
+     
+          
+           
+           
+</beans>

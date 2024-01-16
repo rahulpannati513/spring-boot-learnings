@@ -1,0 +1,51 @@
+Spring FrameWork:
+===============
+so far we have learn't 
+XML approach
+XML + annotation approach
+JavaConfig + Annotation
+SpringBoot + Annotation
+
+Now we are developing entire only java
+
+
+-----------------
+Java Life Cycle =>
+static block,Non Static block(Java Initialization Block), Constructor , method call(setter , business logic ...)then garbage collector
+
+Spring ==> Bean Life Cycle 
+Container Started
+Voter class loading..
+voter is Instantiated
+Init
+Method call with business logic
+Bean Destroyed..
+Container is Stopped
+
+
+static block executed
+intamnce and consructor is instila
+spring is intilazed obj here
+@Postexecuted
+
+
+Spring==> Bean Life Cycle 
+static block,Non static block (Java initialization block), 
+Constructor ,init() with @PostConstruct ,
+ method call(setter,business logic ..),destroy() @PreDestroy will be last to get executed...
+
+
+like a normal 
+
+application.properties 
+=======================
+we use this application properties to use like get the values 
+
+YAML and application.properties are there we can use any one of that...
+
+
+
+
+
+
+
